@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    var wordToBeGuessed;
+    var playerInput;
+    var numberOfTriesRemaining = 6;
+    var wordIndexNumber;
+    var run = true;
+
+    wordIndexNumber = Math.floor(Math.random() * 20) +1;
+
+            switch (wordIndexNumber)
+            {
+                case 1:
+                    wordToBeGuessed = "Mario";
+                break;
+                
+                case 2:
+                    wordToBeGuessed = "Luigi";
+                break;
+
+                case 3:
+                    wordToBeGuessed = "Link";
+                break;
+
+                case 4:
+                    wordToBeGuessed = "Zelda";
+                break;
+
+                case 5:
+                    wordToBeGuessed = "Pikachu";
+                break;
+
+                case 6:
+                    wordToBeGuessed = "DonkeyKong";
+                break;
+
+                case 7:
+                    wordToBeGuessed = "Bowser";
+                break;
+
+                case 8:
+                    wordToBeGuessed = "Sonic";
+                break;
+
+                case 9:
+                    wordToBeGuessed = "Fox";
+                break;
+
+                case 10:
+                    wordToBeGuessed = "Ness";
+                break;
+
+                case 11:
+                    wordToBeGuessed = "Lucas";
+                break;
+
+                case 12:
+                    wordToBeGuessed = "Yoshi";
+                break;
+
+                case 13:
+                    wordToBeGuessed = "Samus";
+                break;
+
+                case 14:
+                    wordToBeGuessed = "Peach";
+                break;
+
+                case 15:
+                    wordToBeGuessed = "Pichu";
+                break;
+
+                case 16:
+                    wordToBeGuessed = "Kirby";
+                break;
+
+                case 17:
+                    wordToBeGuessed = "Falco";
+                break;
+
+                case 18:
+                    wordToBeGuessed = "Ganondorf";
+                break;
+
+                case 19:
+                    wordToBeGuessed = "Olimar";
+                break;
+
+                case 20:
+                    wordToBeGuessed = "Mewtwo";
+            }
+            var indiviudalCharacters = wordToBeGuessed.toLowerCase().split('');
+            console.log(indiviudalCharacters);
+
+        //while (run = true)
+        {
+
+            for (i = 0; i < indiviudalCharacters.length; i ++)
+            {
+                
+            }
+            
+
+                document.onkeyup = function(event)
+                {
+                    
+                    switch (event.key)
+                    {
+                        case "a":
+                        playerInput = "a";
+                        break;
+                        case "b":
+                        playerInput = "b";
+                        break;
+                        case "c":
+                        playerInput = "c";
+                        break;
+                        case "d":
+                        playerInput = "d";
+                        break;
+                        case "e":
+                        playerInput = "e";
+                        break;
+                        case "f":
+                        playerInput = "f";
+                        break;
+                        case "g":
+                        playerInput = "g";
+                        break;
+                        case "h":
+                        playerInput = "h";
+                        break;
+                        case "i":
+                        playerInput = "i";
+                        break;
+                        case "j":
+                        playerInput = "j";
+                        break;
+                        case "k":
+                        playerInput = "k";
+                        break;
+                        case "l":
+                        playerInput = "l";
+                        break;
+                        case "m":
+                        playerInput = "m";
+                        break;
+                        case "n":
+                        playerInput = "n";
+                        break;
+                        case "o":
+                        playerInput = "o";
+                        break;
+                        case "p":
+                        playerInput = "p";
+                        break;
+                        case "q":
+                        playerInput = "q";
+                        break;
+                        case "r":
+                        playerInput = "r";
+                        break;
+                        case "s":
+                        playerInput = "s";
+                        break;
+                        case "t":
+                        playerInput = "t";
+                        break;
+                        case "u":
+                        playerInput = "u";
+                        break;
+                        case "v":
+                        playerInput = "v";
+                        break;
+                        case "w":
+                        playerInput = "w";
+                        break;
+                        case "x":
+                        playerInput = "x";
+                        break;
+                        case "y":
+                        playerInput = "y";
+                        break;
+                        case "z":
+                        playerInput = "z";
+                        break;
+                    }
+                    console.log(playerInput)
+                }
+                if(playerInput != "undefined")
+                {
+                    function gameGuts()
+                    {
+                        if(indiviudalCharacters.includes(playerInput) = true)
+                        {
+                            //do the game mechanics here
+                        }
+                        else
+                        {
+                            numberOfTriesRemaining = numberOfTriesRemaining --; 
+                        }
+                        if(numberOfTriesRemaining == 0)
+                            {
+                                run = false;
+                                alert("You lose");
+                            }
+                    }
+                }   
+
+            //alert("Pause");
+
+        }
+
+    </script>
+    
+</body>
+</html>
